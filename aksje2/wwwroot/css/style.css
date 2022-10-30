@@ -1,0 +1,65 @@
+﻿html, body {
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.btn {
+    margin: 2px;
+}
+
+.container-fluid {
+    height: 50em;
+}
+
+.row {
+    height: 100%;
+}
+
+.side_info {
+    background-color: #F1F1F1;
+    height: auto;
+}
+
+.fakeimg {
+    padding: 10em;
+    background-color: lightcyan;
+    text-align: center;
+}
+
+
+/* Det som er under skal fjernes */
+
+.bestilling-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid black;
+    z-index: 10;
+
+    margin-left: 250px;
+
+    background-color: grey;
+
+    display: none;       
+}
+
+.selg-container {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    border: 1px solid black;
+    z-index: 10;
+    margin-left: 250px;
+    background-color: grey;
+    display: none;
+}

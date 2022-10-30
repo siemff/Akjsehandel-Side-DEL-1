@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section>
+        <nav class="navbar justify-content-center navbar-expand navbar-dark bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Min side <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Aksjer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Min Profil</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+    <section class="content">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="side_info col-3 p-4">
+                    <h4>Egenkapital (NOK)</h4>
+                    <span id="felt-for-saldo"></span>
+                </div>
+                <div class="col p-4">                    
+                    <div class="col fakeimg">Graf</div>
+                    <h4 class="mt-3">Mine Aksjer</h4>
+                    <div class="portefolje-container">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="modal fade" id="selg_popupBox" tabindex="-1" role="dialog" aria-labelledby="popupBox" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="popupBox">Selg</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td scope="col">Antall aksjer</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="typeNumber" class="form-control" /></td>
+                                </tr>
+                                <tr>
+                                    <td id="salgFeilmelding" style="color:red"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Avbryt</button>
+                        <button id="selg-knapp" type="button" class="btn btn-danger">Selg</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NY -->
+        <div class="modal fade" id="receitBox2" tabindex="-1" role="dialog" aria-labelledby="receit" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="receitSelgBox"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="selg-kvittering-melding"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="js/portefolje.js">
+        
+    </script>
+</body>
+</html>
